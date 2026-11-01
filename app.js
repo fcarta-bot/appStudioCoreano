@@ -67,13 +67,54 @@ function salva(testo) {
   try { localStorage.setItem("filtro", testo); } catch (e) {}
 }
 
+// ===== Audio (voce del telefono) =====
+let voceKo = null;
+function trovaVoce() {
+  const voci = speechSynthesis.getVoices();
+  voceKo = voci.find(v => v.lang === "ko-KR") ||
+           voci.find(v => (v.lang || "").toLowerCase().startsWith("ko")) || null;
+}
+if ("speechSynthesis" in window) {
+  trovaVoce();
+  speechSynthesis.addEventListener("voiceschanged", trovaVoce);
+}
+
+function avviso(testo) {
+  let t = document.getElementById("avviso");
+  if (!t) {
+    t = document.createElement("div");
+    t.id = "avviso";
+    document.body.appendChild(t);
+  }
+  t.textContent = testo;
+  t.classList.add("visibile");
+  clearTimeout(avviso.timer);
+  avviso.timer = setTimeout(() => t.classList.remove("visibile"), 6000);
+}
+
 function pronuncia(testo) {
-  if (!("speechSynthesis" in window)) return;
+  if (!("speechSynthesis" in window)) {
+    avviso("Questo browser non può leggere le parole ad alta voce.");
+    return;
+  }
+  trovaVoce();
   const u = new SpeechSynthesisUtterance(testo);
   u.lang = "ko-KR";
+  if (voceKo) u.voice = voceKo;
   u.rate = 0.8;
-  speechSynthesis.cancel();
-  speechSynthesis.speak(u);
+  u.onerror = e => avviso("Audio non riuscito (" + e.error + "). Controlla che il telefono non sia in silenzioso.");
+  speechSynthesis.resume(); // su iPhone a volte resta in pausa
+  // su Safari "cancel" subito prima di "speak" fa saltare l'audio: aspetto un attimo
+  if (speechSynthesis.speaking || speechSynthesis.pending) {
+    speechSynthesis.cancel();
+    setTimeout(() => speechSynthesis.speak(u), 150);
+  } else {
+    speechSynthesis.speak(u);
+  }
+  if (!voceKo) {
+    avviso("Sull'iPhone manca la voce coreana: Impostazioni → Accessibilità → " +
+           "Contenuti letti ad alta voce → Voci → Coreano, e scaricane una.");
+  }
 }
 
 function schedaParola(p, etichetta, attiva, etichette) {

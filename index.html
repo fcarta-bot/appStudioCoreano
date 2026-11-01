@@ -84,6 +84,13 @@
     #testo-widget { font-family: ui-monospace, monospace; display: block; margin: 6px 0; }
     .azioni-foglio { display: flex; justify-content: space-between; gap: 10px; margin-top: 14px; }
     .chiudi { background: var(--accento); color: white; border: 0; padding: 10px 18px; border-radius: 999px; font-size: 1rem; }
+    #avviso {
+      position: fixed; left: 16px; right: 16px; bottom: max(20px, env(safe-area-inset-bottom));
+      background: var(--testo); color: var(--sfondo); padding: 12px 14px; border-radius: 14px;
+      font-size: .9rem; z-index: 20; opacity: 0; transform: translateY(20px);
+      transition: .25s; pointer-events: none; max-width: 488px; margin: 0 auto;
+    }
+    #avviso.visibile { opacity: 1; transform: none; }
   </style>
 </head>
 <body>
