@@ -1,6 +1,9 @@
 """Unisce lista di frequenza + traduzioni e crea parole/blocco-01.json."""
 import csv, json, glob, sys
 from romanizza import romanizza
+from categorie import mappa, ADULTI
+CAT, DOPPIE = mappa()
+for d in DOPPIE: print("Parola in due categorie (tengo la prima):", d)
 
 LISTA = "/home/claude/src/shiberu-yomitan/data/ko-frequency.tsv"
 blocco = int(sys.argv[1]) if len(sys.argv) > 1 else 1
@@ -25,10 +28,14 @@ for i, (ko, t) in enumerate(zip(lemmi, trad)):
         errori += 1
         break
     parole.append({"n": inizio + i + 1, "ko": ko, "rom": romanizza(ko),
-                   "it": t[1], "multi": t[2] == "*"})
+                   "it": t[1], "multi": t[2] == "*",
+                   "cat": CAT.get(ko, "base"), "adulti": ko in ADULTI})
 if len(trad) != len(lemmi):
     print("Numero diverso:", len(lemmi), len(trad))
     errori += 1
+sconosciute = set(CAT) - set(lemmi)
+if sconosciute:
+    print("Parole in categorie.py che non sono nel blocco:", sconosciute)
 if errori:
     sys.exit(1)
 out = f"/home/claude/progetto/sito/parole/blocco-{blocco:02d}.json"

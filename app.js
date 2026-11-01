@@ -1,8 +1,5 @@
-// ===== Logica delle parole del giorno =====
-// ATTENZIONE: la funzione paroleDelGiorno() deve restare identica
-// a quella nello script del widget (widget-scriptable.js).
-
-const GIORNI_PER_BLOCCO = 500; // 1000 parole / 2 al giorno
+// ===== LOGICA CONDIVISA =====
+// ATTENZIONE: questa parte deve restare identica a quella in widget/codice.js
 
 function mulberry32(seme) {
   return function () {
@@ -31,25 +28,43 @@ function giornoNumero(inizio, data) {
   return Math.max(0, Math.round((d1 - d0) / 86400000));
 }
 
-// restituisce { blocco, indici: [i1, i2] } per una certa data
-function paroleDelGiorno(indice, data) {
-  const giorno = giornoNumero(indice.inizio, data);
-  const totaleGiorni = indice.blocchi * GIORNI_PER_BLOCCO;
-  const g = giorno % totaleGiorni; // finiti i blocchi, ricomincia
-  const blocco = Math.floor(g / GIORNI_PER_BLOCCO) + 1;
-  const pos = g % GIORNI_PER_BLOCCO;
-  const ordine = ordineMescolato(1000, blocco);
-  return { blocco, indici: [ordine[pos * 2], ordine[pos * 2 + 1]] };
+// filtro scritto come testo, per esempio "cibo, emozioni, 18+"
+function leggiFiltro(testo) {
+  const parti = String(testo || "").toLowerCase().split(/[,;]+/).map(s => s.trim()).filter(Boolean);
+  return { adulti: parti.includes("18+"), cat: parti.filter(s => s !== "18+") };
 }
 
-// ===== Pagina =====
-const cacheBlocchi = {};
-async function caricaBlocco(n) {
-  if (!cacheBlocchi[n]) {
-    const nome = "parole/blocco-" + String(n).padStart(2, "0") + ".json";
-    cacheBlocchi[n] = fetch(nome).then(r => r.json());
-  }
-  return cacheBlocchi[n];
+function ammessa(p, filtro) {
+  if (p.adulti && !filtro.adulti) return false;
+  return filtro.cat.length === 0 || filtro.cat.includes(p.cat);
+}
+
+// tutte le parole ammesse, blocco dopo blocco, ognuno mescolato a modo suo
+function creaPool(blocchi, filtro) {
+  const pool = [];
+  blocchi.forEach((parole, b) => {
+    for (const i of ordineMescolato(parole.length, b + 1)) {
+      if (ammessa(parole[i], filtro)) pool.push(parole[i]);
+    }
+  });
+  if (pool.length < 2) return creaPool(blocchi, { adulti: filtro.adulti, cat: [] });
+  return pool;
+}
+
+// le due parole di una certa data
+function paroleDelGiorno(indice, data, pool) {
+  const coppie = Math.floor(pool.length / 2);
+  const k = giornoNumero(indice.inizio, data) % coppie; // finite le parole, ricomincia
+  return [pool[2 * k], pool[2 * k + 1]];
+}
+
+// ===== FINE LOGICA CONDIVISA =====
+
+function leggiSalvato() {
+  try { return localStorage.getItem("filtro") || ""; } catch (e) { return ""; }
+}
+function salva(testo) {
+  try { localStorage.setItem("filtro", testo); } catch (e) {}
 }
 
 function pronuncia(testo) {
@@ -61,7 +76,7 @@ function pronuncia(testo) {
   speechSynthesis.speak(u);
 }
 
-function schedaParola(p, etichetta, attiva) {
+function schedaParola(p, etichetta, attiva, etichette) {
   const div = document.createElement("div");
   div.className = "scheda" + (attiva ? " attiva" : "");
   div.innerHTML = `
@@ -70,6 +85,7 @@ function schedaParola(p, etichetta, attiva) {
     <div class="rom">${p.rom}</div>
     <div class="it">${p.it}</div>
     ${p.multi ? '<div class="nota">Questa parola ha più significati</div>' : ""}
+    <div class="cat">${etichette[p.cat] || ""}</div>
     <button class="ascolta" aria-label="Ascolta">🔊 Ascolta</button>`;
   div.querySelector(".ascolta").onclick = () => pronuncia(p.ko);
   return div;
@@ -84,28 +100,31 @@ function titoloGiorno(i, data) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-// crea la pagina del giorno "i" (0 = oggi, 1 = ieri, ...)
-async function creaPagina(indice, oggi, i, ultimo) {
+function creaPagina(st, i, ultimo) {
+  const { indice, oggi, pool, etichette, filtro } = st;
   const data = new Date(oggi.getFullYear(), oggi.getMonth(), oggi.getDate() - i);
-  const { blocco, indici } = paroleDelGiorno(indice, data);
-  const parole = await caricaBlocco(blocco);
+  const [p1, p2] = paroleDelGiorno(indice, data, pool);
 
   const pagina = document.createElement("section");
   pagina.className = "pagina";
   const testa = document.createElement("header");
-  testa.innerHTML = `<h1>${titoloGiorno(i, data)}${i === 0 ? " <span>♥</span>" : ""}</h1>
-    <p class="sotto">${i === 0 ? "오늘의 단어 · le parole di oggi" : "Giorno " + (giornoNumero(indice.inizio, data) + 1)}</p>`;
+  const nomeFiltro = filtro.cat.length ? filtro.cat.map(c => etichette[c] || c).join(", ") : "Tutti gli argomenti";
+  testa.innerHTML = `<div class="riga-titolo"><h1>${titoloGiorno(i, data)}${i === 0 ? " <span>♥</span>" : ""}</h1>
+      ${i === 0 ? '<button class="apri-filtri">⚙︎ Argomenti</button>' : ""}</div>
+    <p class="sotto">${i === 0 ? nomeFiltro + (filtro.adulti ? " · 18+" : "") : "Giorno " + (giornoNumero(indice.inizio, data) + 1)}</p>`;
   pagina.appendChild(testa);
+  if (i === 0) testa.querySelector(".apri-filtri").onclick = apriFiltri;
 
   const schede = document.createElement("div");
   schede.className = "schede";
   if (i === 0) {
     const ora = oggi.getHours() % 2; // ore pari: prima parola, dispari: seconda
-    schede.appendChild(schedaParola(parole[indici[ora]], "Parola di quest'ora", true));
-    schede.appendChild(schedaParola(parole[indici[1 - ora]], "L'altra parola di oggi", false));
+    const [a, b] = ora === 0 ? [p1, p2] : [p2, p1];
+    schede.appendChild(schedaParola(a, "Parola di quest'ora", true, etichette));
+    schede.appendChild(schedaParola(b, "L'altra parola di oggi", false, etichette));
   } else {
-    schede.appendChild(schedaParola(parole[indici[0]], "Prima parola", false));
-    schede.appendChild(schedaParola(parole[indici[1]], "Seconda parola", false));
+    schede.appendChild(schedaParola(p1, "Prima parola", false, etichette));
+    schede.appendChild(schedaParola(p2, "Seconda parola", false, etichette));
   }
   pagina.appendChild(schede);
 
@@ -123,29 +142,97 @@ async function creaPagina(indice, oggi, i, ultimo) {
   return pagina;
 }
 
-async function avvia() {
-  const indice = await fetch("parole/indice.json").then(r => r.json());
-  const oggi = new Date();
-  const totale = giornoNumero(indice.inizio, oggi) + 1; // pagine da mostrare
+let stato = null;
+let osservatore = null;
+
+function disegnaLibro() {
   const libro = document.getElementById("libro");
   libro.innerHTML = "";
-
-  // le pagine si creano a gruppi, man mano che si scorre
+  libro.scrollTop = 0;
+  if (osservatore) osservatore.disconnect();
+  const totale = giornoNumero(stato.indice.inizio, stato.oggi) + 1;
   let fatte = 0;
   const segnaposto = document.createElement("div");
   segnaposto.className = "segnaposto";
-  async function aggiungi(n) {
+  libro.appendChild(segnaposto);
+  function aggiungi(n) {
     const fino = Math.min(totale, fatte + n);
     for (; fatte < fino; fatte++) {
-      libro.insertBefore(await creaPagina(indice, oggi, fatte, fatte === totale - 1), segnaposto);
+      libro.insertBefore(creaPagina(stato, fatte, fatte === totale - 1), segnaposto);
     }
     if (fatte >= totale) segnaposto.remove();
   }
-  libro.appendChild(segnaposto);
-  await aggiungi(5);
-  new IntersectionObserver(voci => {
+  aggiungi(5);
+  osservatore = new IntersectionObserver(voci => {
     if (voci.some(v => v.isIntersecting)) aggiungi(10);
-  }, { root: libro, rootMargin: "200% 0px" }).observe(segnaposto);
+  }, { root: libro, rootMargin: "200% 0px" });
+  osservatore.observe(segnaposto);
+}
+
+function applicaFiltro(testo) {
+  stato.testoFiltro = testo;
+  stato.filtro = leggiFiltro(testo);
+  stato.pool = creaPool(stato.blocchi, stato.filtro);
+  disegnaLibro();
+}
+
+// ===== Pannello argomenti =====
+function apriFiltri() {
+  const pannello = document.getElementById("filtri");
+  const lista = pannello.querySelector(".lista-cat");
+  const f = stato.filtro;
+  const conteggi = {};
+  stato.blocchi.flat().forEach(p => { conteggi[p.cat] = (conteggi[p.cat] || 0) + 1; });
+  lista.innerHTML = Object.entries(stato.etichette).map(([k, nome]) => `
+    <label><input type="checkbox" value="${k}" ${f.cat.includes(k) ? "checked" : ""}>
+      ${nome} <small>${conteggi[k] || 0}</small></label>`).join("");
+  pannello.querySelector("#adulti").checked = f.adulti;
+  aggiornaTesto();
+  pannello.hidden = false;
+}
+
+function testoDalPannello() {
+  const pannello = document.getElementById("filtri");
+  const cat = [...pannello.querySelectorAll(".lista-cat input:checked")].map(i => i.value);
+  if (pannello.querySelector("#adulti").checked) cat.push("18+");
+  return cat.join(", ");
+}
+
+function aggiornaTesto() {
+  const t = testoDalPannello();
+  document.getElementById("testo-widget").textContent = t || "(lascia vuoto: tutti gli argomenti)";
+}
+
+function preparaPannello() {
+  const pannello = document.getElementById("filtri");
+  pannello.addEventListener("change", aggiornaTesto);
+  pannello.querySelector(".tutti").onclick = () => {
+    pannello.querySelectorAll(".lista-cat input").forEach(i => { i.checked = false; });
+    aggiornaTesto();
+  };
+  pannello.querySelector(".copia").onclick = async e => {
+    try { await navigator.clipboard.writeText(testoDalPannello()); e.target.textContent = "Copiato ✓"; }
+    catch (err) { e.target.textContent = "Copia a mano"; }
+    setTimeout(() => { e.target.textContent = "Copia"; }, 1500);
+  };
+  pannello.querySelector(".chiudi").onclick = () => {
+    const t = testoDalPannello();
+    salva(t);
+    applicaFiltro(t);
+    pannello.hidden = true;
+  };
+}
+
+async function avvia() {
+  const indice = await fetch("parole/indice.json").then(r => r.json());
+  const etichette = await fetch("parole/categorie.json").then(r => r.json());
+  const blocchi = [];
+  for (let n = 1; n <= indice.blocchi; n++) {
+    blocchi.push(await fetch("parole/blocco-" + String(n).padStart(2, "0") + ".json").then(r => r.json()));
+  }
+  stato = { indice, etichette, blocchi, oggi: new Date() };
+  preparaPannello();
+  applicaFiltro(leggiSalvato());
 }
 
 avvia().catch(e => {

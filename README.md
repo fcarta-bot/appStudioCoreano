@@ -63,3 +63,13 @@ Lista di frequenza: Shiberu Korean Word Frequency List 2026 by Shiberu
 Romanizzazione calcolata in automatico (Revised Romanization, con le principali
 regole di pronuncia); traduzioni italiane fatte da Claude: alcune potrebbero
 essere imprecise.
+
+## Argomenti e filtro 18+
+
+Nella web app il pulsante "⚙︎ Argomenti" permette di scegliere uno o più
+argomenti e di mostrare anche le parole volgari (18+, nascoste di base).
+Il widget non può leggere le scelte dell'app: per avere le stesse parole
+scrivi lo stesso testo nel campo **Parameter** del widget, per esempio
+`cibo, emozioni` oppure `cibo, 18+`. Campo vuoto = tutti gli argomenti.
+
+Gli argomenti di ogni parola sono in `strumenti/categorie.py`.

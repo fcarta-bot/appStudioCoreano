@@ -3,9 +3,7 @@
 
 module.exports = async function creaWidget(URL_SITO, parametro) {
 
-// ===== Logica (identica a sito/app.js) =====
-  const GIORNI_PER_BLOCCO = 500;
-  
+  // ===== LOGICA CONDIVISA (identica a app.js) =====
   function mulberry32(seme) {
     return function () {
       seme |= 0; seme = (seme + 0x6D2B79F5) | 0;
@@ -25,6 +23,7 @@ module.exports = async function creaWidget(URL_SITO, parametro) {
     return ordine;
   }
   
+  // numero di giorni passati dalla data di inizio (ora locale del telefono)
   function giornoNumero(inizio, data) {
     const [a, m, g] = inizio.split("-").map(Number);
     const d0 = new Date(a, m - 1, g);
@@ -32,16 +31,37 @@ module.exports = async function creaWidget(URL_SITO, parametro) {
     return Math.max(0, Math.round((d1 - d0) / 86400000));
   }
   
-  function paroleDelGiorno(indice, data) {
-    const giorno = giornoNumero(indice.inizio, data);
-    const totaleGiorni = indice.blocchi * GIORNI_PER_BLOCCO;
-    const g = giorno % totaleGiorni;
-    const blocco = Math.floor(g / GIORNI_PER_BLOCCO) + 1;
-    const pos = g % GIORNI_PER_BLOCCO;
-    const ordine = ordineMescolato(1000, blocco);
-    return { blocco, indici: [ordine[pos * 2], ordine[pos * 2 + 1]] };
+  // filtro scritto come testo, per esempio "cibo, emozioni, 18+"
+  function leggiFiltro(testo) {
+    const parti = String(testo || "").toLowerCase().split(/[,;]+/).map(s => s.trim()).filter(Boolean);
+    return { adulti: parti.includes("18+"), cat: parti.filter(s => s !== "18+") };
   }
   
+  function ammessa(p, filtro) {
+    if (p.adulti && !filtro.adulti) return false;
+    return filtro.cat.length === 0 || filtro.cat.includes(p.cat);
+  }
+  
+  // tutte le parole ammesse, blocco dopo blocco, ognuno mescolato a modo suo
+  function creaPool(blocchi, filtro) {
+    const pool = [];
+    blocchi.forEach((parole, b) => {
+      for (const i of ordineMescolato(parole.length, b + 1)) {
+        if (ammessa(parole[i], filtro)) pool.push(parole[i]);
+      }
+    });
+    if (pool.length < 2) return creaPool(blocchi, { adulti: filtro.adulti, cat: [] });
+    return pool;
+  }
+  
+  // le due parole di una certa data
+  function paroleDelGiorno(indice, data, pool) {
+    const coppie = Math.floor(pool.length / 2);
+    const k = giornoNumero(indice.inizio, data) % coppie; // finite le parole, ricomincia
+    return [pool[2 * k], pool[2 * k + 1]];
+  }
+  // ===== FINE LOGICA CONDIVISA =====
+
   // ===== Scarica i dati (e li salva per quando non c'è internet) =====
   const fm = FileManager.local();
   const cartella = fm.joinPath(fm.documentsDirectory(), "parole-coreane");
@@ -69,11 +89,16 @@ module.exports = async function creaWidget(URL_SITO, parametro) {
   let p, quale;
   try {
     const indice = await caricaJSON("parole/indice.json");
+    const blocchi = [];
+    for (let n = 1; n <= indice.blocchi; n++) {
+      blocchi.push(await caricaJSON("parole/blocco-" + String(n).padStart(2, "0") + ".json"));
+    }
+    // il campo "Parameter" del widget, per esempio "cibo, emozioni, 18+"
+    const pool = creaPool(blocchi, leggiFiltro(parametro));
     const oggi = new Date();
-    const { blocco, indici } = paroleDelGiorno(indice, oggi);
-    const parole = await caricaJSON("parole/blocco-" + String(blocco).padStart(2, "0") + ".json");
+    const coppia = paroleDelGiorno(indice, oggi, pool);
     quale = oggi.getHours() % 2; // ore pari: prima parola, dispari: seconda
-    p = parole[indici[quale]];
+    p = coppia[quale];
   } catch (e) {
     const err = w.addText(famiglia.startsWith("accessory") ? "Errore" :
       "Non riesco a caricare le parole. Controlla la connessione.");

@@ -60,10 +60,52 @@
     .segnaposto { height: 1px; }
     footer { font-size: .65rem; color: var(--tenue); text-align: center; margin-top: 6px; line-height: 1.3; }
     footer a { color: inherit; }
+    .riga-titolo { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .apri-filtri, .pulsante {
+      border: 0; background: var(--bordo); color: var(--testo);
+      padding: 7px 12px; border-radius: 999px; font-size: .85rem;
+    }
+    .cat { font-size: .7rem; color: var(--tenue); margin-top: 4px; }
+    #filtri {
+      position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 10;
+      display: flex; align-items: flex-end; justify-content: center;
+    }
+    #filtri[hidden] { display: none; }
+    .foglio {
+      background: var(--sfondo); width: 100%; max-width: 520px; max-height: 88dvh; overflow-y: auto;
+      border-radius: 22px 22px 0 0; padding: 18px 18px max(18px, env(safe-area-inset-bottom));
+    }
+    .foglio h2 { margin: 0 0 4px; font-size: 1.2rem; }
+    .lista-cat { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; margin: 12px 0; }
+    .lista-cat label, .riga-adulti { display: flex; align-items: center; gap: 6px; font-size: .9rem; }
+    .lista-cat small { color: var(--tenue); }
+    .riga-adulti { margin: 6px 0 14px; padding: 10px; background: var(--scheda); border-radius: 12px; }
+    .box-widget { background: var(--scheda); border: 1px dashed var(--bordo); border-radius: 12px; padding: 10px; font-size: .85rem; }
+    #testo-widget { font-family: ui-monospace, monospace; display: block; margin: 6px 0; }
+    .azioni-foglio { display: flex; justify-content: space-between; gap: 10px; margin-top: 14px; }
+    .chiudi { background: var(--accento); color: white; border: 0; padding: 10px 18px; border-radius: 999px; font-size: 1rem; }
   </style>
 </head>
 <body>
 <div id="libro">Caricamento…</div>
+<div id="filtri" hidden>
+  <div class="foglio">
+    <h2>Argomenti</h2>
+    <p class="sotto">Scegli uno o più argomenti. Se non ne scegli nessuno escono parole di tutti.</p>
+    <div class="lista-cat"></div>
+    <label class="riga-adulti"><input type="checkbox" id="adulti"> Mostra anche parole volgari (18+)</label>
+    <div class="box-widget">
+      Per avere le stesse parole nel widget, scrivi questo testo nel campo
+      <b>Parameter</b> del widget (tieni premuto il widget → Modifica widget):
+      <code id="testo-widget"></code>
+      <button class="pulsante copia">Copia</button>
+    </div>
+    <div class="azioni-foglio">
+      <button class="pulsante tutti">Tutti gli argomenti</button>
+      <button class="chiudi">Fatto</button>
+    </div>
+  </div>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
