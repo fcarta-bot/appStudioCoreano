@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Coreano</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Coreano">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="icona-180.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#fdf6f0">
+  <style>
+    :root {
+      --sfondo: #fdf6f0; --scheda: #ffffff; --testo: #2b2a33;
+      --tenue: #8a8796; --accento: #e0607e; --bordo: #f0e4dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --sfondo: #1c1b22; --scheda: #2a2832; --testo: #f3f1f7;
+              --tenue: #a19eae; --accento: #ff8fa8; --bordo: #3a3744; }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; overflow: hidden; }
+    body {
+      background: var(--sfondo); color: var(--testo);
+      font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    }
+    /* il "libro": ogni pagina occupa tutto lo schermo e si aggancia scorrendo */
+    #libro {
+      height: 100vh; height: 100dvh;
+      overflow-y: auto; scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .pagina {
+      height: 100vh; height: 100dvh;
+      scroll-snap-align: start; scroll-snap-stop: always;
+      display: flex; flex-direction: column;
+      padding: max(18px, env(safe-area-inset-top)) 18px max(14px, env(safe-area-inset-bottom));
+      max-width: 520px; margin: 0 auto;
+    }
+    h1 { font-size: 1.5rem; margin: 6px 0 2px; }
+    h1 span { color: var(--accento); }
+    .sotto { color: var(--tenue); margin: 0 0 14px; font-size: .95rem; }
+    .schede { flex: 1; display: flex; flex-direction: column; gap: 12px; justify-content: center; min-height: 0; }
+    .scheda {
+      background: var(--scheda); border: 1px solid var(--bordo);
+      border-radius: 20px; padding: 14px 18px; text-align: center;
+    }
+    .scheda.attiva { border: 2px solid var(--accento); }
+    .etichetta { font-size: .75rem; color: var(--tenue); text-transform: uppercase; letter-spacing: .05em; }
+    .ko { font-size: 2.8rem; font-weight: 700; margin: 4px 0 0; }
+    .rom { color: var(--accento); font-size: 1.1rem; font-style: italic; }
+    .it { font-size: 1.15rem; margin-top: 6px; }
+    .nota { font-size: .75rem; color: var(--tenue); margin-top: 4px; }
+    .ascolta {
+      margin-top: 10px; border: 0; background: var(--bordo); color: var(--testo);
+      padding: 7px 16px; border-radius: 999px; font-size: .9rem;
+    }
+    .suggerimento { text-align: center; color: var(--tenue); font-size: .85rem; margin: 12px 0 0; }
+    .segnaposto { height: 1px; }
+    footer { font-size: .65rem; color: var(--tenue); text-align: center; margin-top: 6px; line-height: 1.3; }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+<div id="libro">Caricamento…</div>
+<script src="app.js"></script>
+</body>
+</html>

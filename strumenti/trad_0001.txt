@@ -1,0 +1,295 @@
+하다|fare|
+있다|esserci / avere|*
+되다|diventare|
+보다|vedere / guardare|
+없다|non esserci / non avere|*
+아니다|non essere|
+가다|andare|
+이|questo / dente / due|*
+수|possibilità (poter fare) / numero|*
+것|cosa|
+그|quello / lui|*
+사람|persona|
+않다|non (fare)|
+같다|essere uguale / sembrare|*
+알다|sapere / conoscere|
+등|eccetera / schiena|*
+왜|perché|
+다|tutto|
+좋다|essere buono / piacere|
+주다|dare|
+그렇다|essere così|
+말|parola / cavallo|*
+모르다|non sapere|
+뭐|cosa?|
+이다|essere|
+더|di più|
+말다|smettere (non fare)|
+한|un / circa|*
+받다|ricevere|
+대하다|riguardare / trattare|*
+위하다|per (a beneficio di)|
+지금|adesso|
+저|io (formale) / quello là|*
+및|e (inoltre)|
+좀|un po' / per favore|*
+맞다|essere giusto / essere colpito|*
+많다|essere tanti|
+오다|venire|
+우리|noi|
+때|momento / quando|
+중|in mezzo / durante|*
+그냥|semplicemente / così|
+죽다|morire|
+만들다|fare / costruire|
+내|mio / io|*
+전|prima / tutto / io (formale)|*
+나다|spuntare / accadere|*
+보이다|vedersi / mostrare|*
+정말|davvero|
+무슨|che (tipo di)|
+생각하다|pensare|
+이제|ora (ormai)|
+쓰다|scrivere / usare / essere amaro|*
+따르다|seguire / versare|*
+거|cosa (colloquiale)|
+먹다|mangiare|
+너|tu|
+하|ah (sospiro) / sotto|*
+일|lavoro / uno / giorno|*
+잘|bene|
+다른|altro / diverso|
+어떻다|essere come (com'è?)|
+나|io|
+살다|vivere|
+이렇다|essere così (questo)|
+때문|a causa di|
+진짜|davvero / vero|
+후|dopo|
+이런|tale (come questo)|
+말하다|dire / parlare|
+너무|troppo|
+그러다|fare così|
+나오다|uscire|
+생각|pensiero|
+그리고|e (poi)|
+모든|tutti / ogni|
+함께|insieme|
+싶다|volere (fare)|
+경우|caso|
+뭔|che cosa (colloquiale)|
+사용하다|usare|
+아직|ancora|
+시간|tempo / ora|
+믿다|credere / fidarsi|
+크다|essere grande|
+돈|soldi|
+안|non / dentro|*
+그런|tale (come quello)|
+통하다|passare per / capirsi|*
+듣다|ascoltare|
+들다|alzare / entrare / costare|*
+아|ah!|
+애|bambino|
+문제|problema|
+또는|oppure|
+또|di nuovo / anche|
+가장|il più|
+당신|tu / Lei|
+가지다|avere / possedere|
+미국|Stati Uniti|
+자신|se stesso / sicurezza di sé|*
+두|due|
+놈|tizio (spregiativo)|
+보내다|mandare / trascorrere|*
+어디|dove|
+누|chi (forma breve di 누구)|
+사다|comprare|
+찾다|cercare / trovare|
+그럼|allora|
+모두|tutti / tutto|
+나가다|uscire (andare fuori)|
+여자|donna|
+하나|uno|
+잡다|afferrare / prendere|
+자|ecco! (dai) / righello|*
+또한|inoltre|
+한국|Corea (del Sud)|
+많이|molto|
+다음|prossimo / successivo|
+이게|questo (è) [이것이]|
+싫다|non piacere|
+자기|se stesso / tesoro|*
+제|mio (formale) / io|*
+죽이다|uccidere|
+내다|tirare fuori / pagare|*
+못하다|non riuscire / essere peggio|*
+현재|attualmente / presente|
+곳|posto|
+필요하다|essere necessario|
+다시|di nuovo|
+근데|ma (però)|
+이번|questa volta|
+어떤|quale / un certo|
+소리|suono / rumore|
+앞|davanti|
+몇|quanti / alcuni|
+중국|Cina|
+시작하다|iniziare|
+드리다|dare (onorifico)|
+마음|cuore (animo)|
+지역|zona / regione|
+누구|chi|
+바라다|sperare / desiderare|
+얼마나|quanto|
+일본|Giappone|
+그래서|quindi|
+하지만|ma|
+게임|gioco (videogioco)|
+타다|salire su / bruciare|*
+사실|fatto / in realtà|
+세계|mondo|
+그게|quello (è) [그것이]|
+뭘|cosa (oggetto) [무엇을]|
+바로|proprio / subito|
+이건|questo (tema) [이것은]|
+아주|molto|
+여기|qui|
+결과|risultato|
+생기다|nascere / comparire|
+정부|governo|
+건|cosa (tema) / caso|*
+이상|più di / strano / ideale|*
+집|casa|
+제발|per favore (ti prego)|
+프로그램|programma|
+이후|in seguito|
+이유|motivo|
+의하다|basarsi su|
+남자|uomo|
+계속|continuamente|
+난|io (tema) [나는]|
+아이|bambino|
+들어가다|entrare|
+만나다|incontrare|
+어쩌다|per caso / come mai|
+아니|no|
+이름|nome|
+못|non potere / chiodo|*
+그러나|tuttavia|
+힘들다|essere faticoso|
+그것|quella cosa|
+처음|prima volta / inizio|
+시|ora / città / poesia|*
+여러|vari|
+동안|durante|
+치다|colpire / suonare|*
+언제|quando|
+세상|mondo|
+기자|giornalista|
+높다|essere alto|
+이거|questo (colloquiale)|
+중요하다|essere importante|
+새롭다|essere nuovo|
+미치다|impazzire / raggiungere|*
+분|minuto / persona (onorifico)|*
+대통령|presidente|
+알리다|far sapere|
+방법|metodo|
+버리다|buttare via|
+정도|grado / circa|
+두다|mettere / lasciare|
+놓다|posare|
+남다|rimanere|
+나쁘다|essere cattivo|
+영화|film|
+다르다|essere diverso|
+밝히다|rivelare / illuminare|*
+첫|primo|
+상황|situazione|
+같이|insieme|
+오늘|oggi|
+이것|questa cosa|
+빨리|velocemente|
+아무|qualsiasi / nessuno|*
+데|posto / circostanza|*
+전부|tutto|
+끝나다|finire|
+총|totale / pistola|*
+개|cane / pezzo (contatore)|*
+뒤|dietro / dopo|
+경찰|polizia|
+위|sopra / stomaco|*
+약|medicina / circa|*
+게|granchio / cosa (colloquiale)|*
+너희|voi|
+눈|occhio / neve|*
+서울|Seul|
+이러다|fare così|
+걸리다|essere appeso / volerci (tempo) / ammalarsi|*
+열리다|aprirsi / tenersi (evento)|*
+특히|soprattutto|
+주|settimana / principale|*
+이미|già|
+날|giorno / lama|*
+이상하다|essere strano|
+묻다|chiedere / seppellire|*
+가족|famiglia|
+각|ogni / angolo|*
+느끼다|sentire (provare)|
+지키다|proteggere / rispettare|
+절대|assolutamente|
+일하다|lavorare|
+관하다|riguardare|
+내리다|scendere / cadere (pioggia)|*
+물론|certamente|
+얻다|ottenere|
+돌아가다|tornare / girare|*
+거기|lì|
+기업|azienda|
+참|davvero|
+짓|azione (spregiativo)|
+좋아하다|piacere (amare)|
+그래도|comunque|
+꼭|assolutamente / esattamente|
+어렵다|essere difficile|
+먼저|prima|
+가능하다|essere possibile|
+지나다|passare|
+이용하다|utilizzare|
+그만|basta|
+과정|processo|
+다양하다|essere vario|
+떨어지다|cadere / staccarsi|
+도움|aiuto|
+야|ehi! / notte|*
+이러하다|essere così|
+원하다|volere|
+갖다|avere (forma breve di 가지다)|
+속|dentro / interno|
+인간|essere umano|
+여성|donna (genere femminile)|
+부르다|chiamare / cantare / essere sazio|*
+작다|essere piccolo|
+매우|molto|
+국가|nazione / inno|*
+그걸|quello (oggetto) [그것을]|
+명|persone (contatore)|
+상태|stato / condizione|
+없이|senza|
+뿐|soltanto|
+북한|Corea del Nord|
+넌|tu (tema) [너는]|
+올리다|alzare / pubblicare|*
+번|volta / numero|*
+빠지다|cadere dentro / mancare|*
+확인하다|verificare|
+점|punto|
+잘하다|essere bravo|
+연구|ricerca|
+부분|parte|
+활동|attività|
+바꾸다|cambiare|
+인하다|essere causato da|
+이야기|storia / discorso|
+발생하다|verificarsi|
