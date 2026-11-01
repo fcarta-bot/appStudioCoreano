@@ -115,7 +115,7 @@ function pronuncia(testo) {
   u.lang = "ko-KR";
   if (voceKo) u.voice = voceKo;
   u.pitch = parseFloat(leggiImp("tono", "1.2"));
-  u.rate = parseFloat(leggiImp("velocita", "0.8"));
+  u.rate = parseFloat(leggiImp("velocita2", "0.8"));
   u.onerror = e => avviso("Audio non riuscito (" + e.error + "). Controlla che il telefono non sia in silenzioso.");
   speechSynthesis.resume(); // su iPhone a volte resta in pausa
   // su Safari "cancel" subito prima di "speak" fa saltare l'audio: aspetto un attimo
@@ -271,11 +271,12 @@ function preparaVoce() {
   speechSynthesis.addEventListener("voiceschanged", riempi);
   sel.onchange = () => { salvaImp("voce", sel.value); trovaVoce(); pronuncia("안녕하세요"); };
   for (const gruppo of ["tono", "velocita"]) {
+    const chiave = gruppo === "velocita" ? "velocita2" : gruppo;
     const base = gruppo === "tono" ? "1.2" : "0.8";
     document.querySelectorAll(`[data-${gruppo}]`).forEach(b => {
-      b.classList.toggle("scelto", b.dataset[gruppo] === leggiImp(gruppo, base));
+      b.classList.toggle("scelto", b.dataset[gruppo] === leggiImp(chiave, base));
       b.onclick = () => {
-        salvaImp(gruppo, b.dataset[gruppo]);
+        salvaImp(chiave, b.dataset[gruppo]);
         document.querySelectorAll(`[data-${gruppo}]`).forEach(x => x.classList.toggle("scelto", x === b));
         pronuncia("안녕하세요");
       };
