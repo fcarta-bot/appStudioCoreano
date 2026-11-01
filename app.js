@@ -69,10 +69,23 @@ function salva(testo) {
 
 // ===== Audio (voce del telefono) =====
 let voceKo = null;
+function leggiImp(nome, base) {
+  try { const v = localStorage.getItem(nome); return v === null ? base : v; } catch (e) { return base; }
+}
+function salvaImp(nome, valore) {
+  try { localStorage.setItem(nome, valore); } catch (e) {}
+}
+function vociCoreane() {
+  return speechSynthesis.getVoices().filter(v => (v.lang || "").toLowerCase().replace("_", "-").startsWith("ko"));
+}
+// voci coreane femminili note su iPhone/Mac (si usano se non è stata scelta una voce)
+const VOCI_FEMMINILI = ["yuna", "sora", "jian", "suhyun", "heami", "sun-hi", "female", "여"];
 function trovaVoce() {
-  const voci = speechSynthesis.getVoices();
-  voceKo = voci.find(v => v.lang === "ko-KR") ||
-           voci.find(v => (v.lang || "").toLowerCase().startsWith("ko")) || null;
+  const voci = vociCoreane();
+  const scelta = leggiImp("voce", "");
+  voceKo = voci.find(v => v.voiceURI === scelta) ||
+           voci.find(v => VOCI_FEMMINILI.some(n => v.name.toLowerCase().includes(n))) ||
+           voci[0] || null;
 }
 if ("speechSynthesis" in window) {
   trovaVoce();
@@ -101,7 +114,8 @@ function pronuncia(testo) {
   const u = new SpeechSynthesisUtterance(testo);
   u.lang = "ko-KR";
   if (voceKo) u.voice = voceKo;
-  u.rate = 0.8;
+  u.pitch = parseFloat(leggiImp("tono", "1.2"));
+  u.rate = parseFloat(leggiImp("velocita", "0.8"));
   u.onerror = e => avviso("Audio non riuscito (" + e.error + "). Controlla che il telefono non sia in silenzioso.");
   speechSynthesis.resume(); // su iPhone a volte resta in pausa
   // su Safari "cancel" subito prima di "speak" fa saltare l'audio: aspetto un attimo
@@ -151,7 +165,7 @@ function creaPagina(st, i, ultimo) {
   const testa = document.createElement("header");
   const nomeFiltro = filtro.cat.length ? filtro.cat.map(c => etichette[c] || c).join(", ") : "Tutti gli argomenti";
   testa.innerHTML = `<div class="riga-titolo"><h1>${titoloGiorno(i, data)}${i === 0 ? " <span>♥</span>" : ""}</h1>
-      ${i === 0 ? '<button class="apri-filtri">⚙︎ Argomenti</button>' : ""}</div>
+      ${i === 0 ? '<button class="apri-filtri">⚙︎ Impostazioni</button>' : ""}</div>
     <p class="sotto">${i === 0 ? nomeFiltro + (filtro.adulti ? " · 18+" : "") : "Giorno " + (giornoNumero(indice.inizio, data) + 1)}</p>`;
   pagina.appendChild(testa);
   if (i === 0) testa.querySelector(".apri-filtri").onclick = apriFiltri;
@@ -244,8 +258,34 @@ function aggiornaTesto() {
   document.getElementById("testo-widget").textContent = t || "(lascia vuoto: tutti gli argomenti)";
 }
 
+function preparaVoce() {
+  const sel = document.getElementById("scelta-voce");
+  function riempi() {
+    trovaVoce();
+    const voci = vociCoreane();
+    sel.innerHTML = voci.length
+      ? voci.map(v => `<option value="${v.voiceURI}" ${voceKo && v.voiceURI === voceKo.voiceURI ? "selected" : ""}>${v.name}</option>`).join("")
+      : "<option>Nessuna voce coreana sul telefono</option>";
+  }
+  riempi();
+  speechSynthesis.addEventListener("voiceschanged", riempi);
+  sel.onchange = () => { salvaImp("voce", sel.value); trovaVoce(); pronuncia("안녕하세요"); };
+  for (const gruppo of ["tono", "velocita"]) {
+    const base = gruppo === "tono" ? "1.2" : "0.8";
+    document.querySelectorAll(`[data-${gruppo}]`).forEach(b => {
+      b.classList.toggle("scelto", b.dataset[gruppo] === leggiImp(gruppo, base));
+      b.onclick = () => {
+        salvaImp(gruppo, b.dataset[gruppo]);
+        document.querySelectorAll(`[data-${gruppo}]`).forEach(x => x.classList.toggle("scelto", x === b));
+        pronuncia("안녕하세요");
+      };
+    });
+  }
+}
+
 function preparaPannello() {
   const pannello = document.getElementById("filtri");
+  if ("speechSynthesis" in window) preparaVoce();
   pannello.addEventListener("change", aggiornaTesto);
   pannello.querySelector(".tutti").onclick = () => {
     pannello.querySelectorAll(".lista-cat input").forEach(i => { i.checked = false; });

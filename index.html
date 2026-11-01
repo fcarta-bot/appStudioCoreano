@@ -91,12 +91,30 @@
       transition: .25s; pointer-events: none; max-width: 488px; margin: 0 auto;
     }
     #avviso.visibile { opacity: 1; transform: none; }
+    .voce { display: grid; gap: 10px; margin: 10px 0 20px; font-size: .9rem; }
+    .voce select { margin-left: 8px; font-size: .95rem; padding: 4px; max-width: 70%; }
+    .riga-scelte { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .pulsante.scelto { background: var(--accento); color: white; }
   </style>
 </head>
 <body>
 <div id="libro">Caricamento…</div>
 <div id="filtri" hidden>
   <div class="foglio">
+    <h2>Voce</h2>
+    <div class="voce">
+      <label>Voce <select id="scelta-voce"></select></label>
+      <div class="riga-scelte">Tono
+        <button class="pulsante" data-tono="0.9">Grave</button>
+        <button class="pulsante" data-tono="1.2">Medio</button>
+        <button class="pulsante" data-tono="1.5">Acuto</button>
+      </div>
+      <div class="riga-scelte">Velocità
+        <button class="pulsante" data-velocita="0.6">Lenta</button>
+        <button class="pulsante" data-velocita="0.8">Normale</button>
+        <button class="pulsante" data-velocita="1">Veloce</button>
+      </div>
+    </div>
     <h2>Argomenti</h2>
     <p class="sotto">Scegli uno o più argomenti. Se non ne scegli nessuno escono parole di tutti.</p>
     <div class="lista-cat"></div>
