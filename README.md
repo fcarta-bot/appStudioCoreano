@@ -14,7 +14,8 @@ trascinando verso l'alto si va al giorno prima, fino al primo giorno.
   - `index.html`, `app.js` → la pagina
   - `parole/blocco-01.json` → le prime 1.000 parole (coreano, romanizzazione, italiano)
   - `parole/indice.json` → data di inizio e numero di blocchi disponibili
-- `widget-scriptable.js` → lo script del widget da incollare in Scriptable
+- `widget-scriptable.js` → lo script da incollare in Scriptable (si incolla una volta sola)
+- `widget/codice.js` → il codice vero del widget: lo script lo scarica da qui ogni volta, quindi gli aggiornamenti arrivano da soli
 - `tools/` → gli script Python usati per creare i blocchi (servono solo a te)
 
 ## 1. Pubblicare la web app (gratis, con GitHub Pages)
