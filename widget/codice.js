@@ -38,6 +38,7 @@ module.exports = async function creaWidget(URL_SITO, parametro) {
   }
   
   function ammessa(p, filtro) {
+    if (p.salta) return false;
     if (p.adulti && !filtro.adulti) return false;
     return filtro.cat.length === 0 || filtro.cat.includes(p.cat);
   }
@@ -61,6 +62,18 @@ module.exports = async function creaWidget(URL_SITO, parametro) {
     return [pool[2 * k], pool[2 * k + 1]];
   }
   // ===== FINE LOGICA CONDIVISA =====
+
+  // i blocchi di parole sono grandi: li riscarica solo se è cambiata la versione
+  async function caricaBlocco(nomeFile, versione) {
+    const percorso = fm.joinPath(cartella, nomeFile.replace("/", "_"));
+    const percorsoV = percorso + ".versione";
+    if (fm.fileExists(percorso) && fm.fileExists(percorsoV) && fm.readString(percorsoV) === String(versione)) {
+      return JSON.parse(fm.readString(percorso));
+    }
+    const dati = await caricaJSON(nomeFile);
+    fm.writeString(percorsoV, String(versione));
+    return dati;
+  }
 
   // ===== Scarica i dati (e li salva per quando non c'è internet) =====
   const fm = FileManager.local();
@@ -91,7 +104,7 @@ module.exports = async function creaWidget(URL_SITO, parametro) {
     const indice = await caricaJSON("parole/indice.json");
     const blocchi = [];
     for (let n = 1; n <= indice.blocchi; n++) {
-      blocchi.push(await caricaJSON("parole/blocco-" + String(n).padStart(2, "0") + ".json"));
+      blocchi.push(await caricaBlocco("parole/blocco-" + String(n).padStart(2, "0") + ".json", indice.versione || 1));
     }
     // il campo "Parameter" del widget, per esempio "cibo, emozioni, 18+"
     const pool = creaPool(blocchi, leggiFiltro(parametro));

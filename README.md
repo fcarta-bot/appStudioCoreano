@@ -12,7 +12,7 @@ trascinando verso l'alto si va al giorno prima, fino al primo giorno.
 
 - `sito/` → la web app da pubblicare
   - `index.html`, `app.js` → la pagina
-  - `parole/blocco-01.json` → le prime 1.000 parole (coreano, romanizzazione, italiano)
+  - `parole/blocco-01.json` … `blocco-10.json` → le 10.000 parole più frequenti, 1.000 per file (coreano, romanizzazione, italiano, argomento)
   - `parole/indice.json` → data di inizio e numero di blocchi disponibili
 - `widget-scriptable.js` → lo script da incollare in Scriptable (si incolla una volta sola)
 - `widget/codice.js` → il codice vero del widget: lo script lo scarica da qui ogni volta, quindi gli aggiornamenti arrivano da soli

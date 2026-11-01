@@ -1,0 +1,500 @@
+오른쪽|destra||lu
+길이|lunghezza||nu
+귀|orecchio||co
+높이다|alzare (aumentare)||az
+개최하다|organizzare (un evento)||sv
+높이|altezza / in alto|*|nu
+공사|lavori (cantiere)||ca
+밝다|essere luminoso / essere allegro|*|de
+대형|grande (formato)||de
+거부하다|rifiutare||cm
+지속적|continuo||ba
+개인적|personale||ba
+며|e (congiunzione)||ba
+모드|modalità||tc
+부리다|comportarsi (fare i capricci) / usare|*|az
+주식|azioni (borsa) / alimento base|*|so
+가져가다|portare via||az
+박근혜|Park Geun-hye||se
+개최되다|tenersi (evento)||sv
+사무실|ufficio||st
+똥|cacca||co
+눈물|lacrime||em
+인상|impressione / aumento|*|ba
+복잡하다|essere complicato||de
+축제|festival||sv
+들이다|far entrare / spendere (tempo)|*|az
+활용하다|sfruttare (utilizzare)||ba
+촬영|riprese (fotografia)||sv
+꺼내다|tirare fuori||az
+관점|punto di vista||ba
+노인|anziano||pe
+홍콩|Hong Kong||lu
+부부|coppia sposata||pe
+출처|fonte||cm
+제안|proposta||cm
+평가하다|valutare||ba
+세금|tasse||so
+치르다|pagare / sostenere (esame)|*|so
+늘리다|aumentare (estendere)||nu
+뒤지다|frugare / restare indietro|*|az
+최대한|il più possibile||nu
+올바르다|essere corretto||de
+군인|soldato||se
+조치|provvedimento||se
+전략|strategia||ba
+대전|Daejeon / grande guerra|*|lu
+이익|profitto||so
+실력|abilità||st
+다물다|chiudere (la bocca)||co
+약속|promessa / appuntamento|*|cm
+엔진|motore||vi
+기여하다|contribuire||ba
+이스라엘|Israele||lu
+기초|base (fondamenta)||ba
+수상하다|essere sospetto / ricevere un premio|*|ba
+난리|caos (putiferio)||ba
+장난|scherzo||sv
+기|energia (spirito) / bandiera|*|ba
+세대|generazione||pe
+다가오다|avvicinarsi||ba
+차원|dimensione (livello)||ba
+단위|unità (di misura)||nu
+판단|giudizio||ba
+직장|posto di lavoro||st
+건설|costruzione||st
+도입|introduzione||ba
+민족|popolo (etnia)||se
+찌르다|pungere (trafiggere)||az
+님|signor(e) (onorifico)||pe
+언젠가|un giorno (prima o poi)||te
+헛소리|sciocchezze||cm
+기독교|cristianesimo||se
+오픈|apertura||so
+신고하다|denunciare (segnalare)||se
+건강|salute||co
+절|tempio buddhista / inchino|*|se
+전자|elettronico / il primo (dei due)|*|tc
+바이러스|virus||co
+비판|critica||cm
+우주|universo (spazio)||na
+권한|autorità (permesso)||se
+발언|dichiarazione||cm
+건강하다|essere in salute||co
+진출|ingresso (in un mercato)||ba
+조작|manipolazione / manovra|*|ba
+권력|potere||se
+표준|standard||ba
+다수|maggioranza||nu
+놓치다|perdere (lasciarsi sfuggire)||az
+오랜|lungo (di lunga data)||te
+대중|pubblico (massa)||se
+전용|uso esclusivo||ba
+바닥|pavimento (fondo)||ca
+추진하다|portare avanti||ba
+대응|risposta (reazione)||ba
+도구|strumento||ca
+무너지다|crollare||ba
+몰다|guidare / spingere|*|vi
+부자|ricco / padre e figlio|*|so
+질병|malattia||co
+상당히|parecchio||ba
+떠오르다|venire in mente / sorgere|*|em
+경력|carriera (esperienza)||st
+지우다|cancellare||az
+내보내다|mandare fuori||az
+증상|sintomo||co
+비교|confronto||ba
+소개|presentazione||cm
+본사|sede centrale||st
+갈등|conflitto||se
+총리|primo ministro||se
+요구|richiesta||cm
+떨다|tremare||co
+뜨겁다|essere bollente||de
+시원하다|essere fresco||de
+라이브|dal vivo (live)||sv
+통신|telecomunicazioni||tc
+제조|fabbricazione||st
+현황|situazione attuale||ba
+라인|linea||ba
+조용하다|essere silenzioso||de
+꾸다|sognare (fare un sogno)||em
+내일|domani||te
+휴대폰|cellulare||tc
+스트레스|stress||em
+실패하다|fallire||ba
+집단|gruppo (collettivo)||se
+파리|Parigi / mosca (insetto)|*|lu
+따뜻하다|essere caldo (tiepido)||de
+여부|se o no||ba
+여|femmina / più di|*|ba
+결론|conclusione||ba
+용어|termine (vocabolo)||st
+기획|pianificazione||st
+성공적|riuscito||ba
+이사|trasloco / direttore (consigliere)|*|ca
+가끔|a volte||te
+변경되다|essere modificato||ba
+투자하다|investire||so
+오늘날|oggigiorno||te
+이외|a parte (oltre a)||ba
+이탈리아|Italia||lu
+의무|dovere (obbligo)||se
+다녀오다|andare e tornare||vi
+개최|organizzazione (di evento)||sv
+구체적|concreto||ba
+결코|mai (in nessun modo)||ba
+연결|collegamento||tc
+규제|regolamentazione||se
+명령|ordine (comando)||cm
+기쁘다|essere contento||em
+잠|sonno||co
+사과|mela / scuse|*|ci
+규칙|regola||ba
+인|persona / fosforo|*|ba
+참석하다|partecipare (presenziare)||ba
+내놓다|tirare fuori (presentare)||az
+플레이|gioco (giocata)||sv
+글로벌|globale||ba
+중소기업|piccole e medie imprese||st
+보고서|rapporto (relazione)||st
+제거하다|rimuovere||az
+한국어|lingua coreana||st
+벽|muro||ca
+판사|giudice||se
+지정하다|designare||ba
+게다가|per di più||ba
+역사적|storico||se
+제한|limite (restrizione)||ba
+대출|prestito||so
+어른|adulto||pe
+내려가다|scendere||vi
+양식|modulo / stile / cibo occidentale|*|ba
+설정|impostazione||tc
+스토리|storia (trama)||sv
+앞서다|precedere||ba
+협력|cooperazione||ba
+최소한|almeno (il minimo)||nu
+공원|parco||lu
+신호|segnale (semaforo)||vi
+페이지|pagina||tc
+소중하다|essere prezioso||de
+숲|bosco||na
+가하다|infliggere (aggiungere)||ba
+서버|server||tc
+집안|famiglia (casato) / dentro casa|*|pe
+영웅|eroe||pe
+상처|ferita||co
+친하다|essere intimo (amici)||pe
+분명하다|essere chiaro||de
+비판하다|criticare||cm
+애쓰다|sforzarsi||ba
+오|oh! / cinque|*|cm
+발전하다|svilupparsi||ba
+출시되다|essere lanciato (in vendita)||so
+가을|autunno||te
+바라보다|guardare (fissare)||az
+상품|prodotto (merce) / premio|*|so
+주위|intorno||lu
+지도자|leader (guida)||se
+벌|punizione / ape / paio|*|ba
+이어|di seguito||ba
+부드럽다|essere morbido||de
+반대하다|opporsi||cm
+국회의원|parlamentare||se
+적극적|attivo (deciso)||de
+따라가다|seguire (andare dietro)||vi
+홈|casa (home) / scanalatura|*|tc
+오직|soltanto||ba
+개정|revisione (modifica)||se
+판결|sentenza||se
+굉장히|straordinariamente||ba
+우승|vittoria (campionato)||sv
+프로|professionista / per cento / programma|*|ba
+큰일|guaio (cosa grave)||ba
+물질|sostanza (materia)||na
+대응하다|rispondere (reagire)||ba
+무리|esagerazione (sforzo) / gruppo|*|ba
+귀엽다|essere carino (tenero)||de
+가리다|coprire / distinguere|*|az
+소비자|consumatore||so
+무기|arma||se
+북|nord / tamburo|*|lu
+확보하다|assicurarsi (ottenere)||ba
+금|oro / venerdì / crepa|*|so
+스타|star (celebrità)||sv
+성과|risultato (resa)||ba
+요|(cortesia) / materassino|*|ba
+파트너|partner||pe
+접근|accesso (avvicinamento)||ba
+부탁하다|chiedere un favore||cm
+플레이어|giocatore (player)||sv
+멀리|lontano||lu
+재미|divertimento||em
+핵심|nucleo (punto chiave)||ba
+수출|esportazione||so
+사전|dizionario / in anticipo|*|st
+말리다|asciugare / fermare (trattenere)|*|az
+노리다|mirare a||az
+죄송하다|essere spiacente (formale)||cm
+믿음|fede (fiducia)||em
+추가하다|aggiungere||az
+나아가다|avanzare||ba
+익숙하다|essere abituato||ba
+빚|debito||so
+상호|reciproco / nome commerciale|*|ba
+가게|negozio||so
+제안하다|proporre||cm
+성능|prestazioni||tc
+사|quattro / azienda / morte|*|nu
+장애|disabilità / guasto|*|co
+부|ricchezza / dipartimento / parte|*|ba
+달성하다|raggiungere (un obiettivo)||ba
+오래되다|essere vecchio (di lunga data)||te
+불안하다|essere ansioso||em
+행하다|compiere||az
+대로|come (secondo) / viale|*|ba
+로봇|robot||tc
+와인|vino||ci
+체결하다|concludere (un accordo)||so
+현지|sul posto (locale)||lu
+택시|taxi||vi
+판매하다|vendere||so
+처리|gestione (trattamento)||ba
+사태|situazione (crisi)||se
+밟다|calpestare||az
+외국|paese straniero||lu
+고등학교|liceo (scuola superiore)||st
+생산하다|produrre||st
+철학|filosofia||st
+재산|patrimonio||so
+본격적|vero e proprio||ba
+분명히|chiaramente||ba
+돌아다니다|girare (andare in giro)||vi
+보도하다|riportare (notizia)||se
+커지다|ingrandirsi||ba
+맨날|tutti i giorni (sempre)||te
+특별|speciale||de
+대박|grande successo (forte!)||cm
+자원|risorse / volontariato|*|ba
+체제|sistema (regime)||se
+법원|tribunale||se
+수상|premio (vincita) / primo ministro|*|ba
+서류|documenti (pratiche)||st
+접근하다|avvicinarsi (accedere)||ba
+담당하다|essere responsabile di||st
+준비되다|essere pronto||ba
+합리적|ragionevole||de
+아이디어|idea||ba
+출시하다|lanciare (sul mercato)||so
+만지다|toccare||az
+감히|osare||ba
+성경|Bibbia||se
+감소하다|diminuire||nu
+짜다|essere salato / tessere / spremere|*|ci
+신뢰|fiducia||em
+호|numero (n.) / nome d'arte|*|nu
+통계|statistica||nu
+등급|livello (grado)||ba
+지하철|metropolitana||vi
+선보이다|presentare (mostrare)||ba
+똑바로|dritto (bene)||ba
+바치다|offrire (dedicare)||az
+지적하다|far notare||cm
+아끼다|risparmiare / tenere caro|*|so
+꾸미다|decorare||ca
+화면|schermo||tc
+둘째|secondo (secondogenito)||nu
+전력|energia elettrica / tutte le forze|*|ba
+뺏다|portare via (rubare)||az
+의식|coscienza / cerimonia|*|em
+마련하다|preparare (procurare)||ba
+대선|elezioni presidenziali||se
+가입하다|iscriversi||tc
+표|biglietto / tabella / voto|*|ba
+휴가|vacanza (ferie)||vi
+사실상|di fatto||ba
+참가자|partecipante||pe
+정확히|esattamente||ba
+일부러|apposta||ba
+모바일|mobile (cellulare)||tc
+시도|tentativo / città e province|*|ba
+줄어들다|diminuire||nu
+풀리다|sciogliersi (risolversi)||ba
+전투|battaglia||se
+괜히|inutilmente (senza motivo)||ba
+애니메이션|animazione (cartoni)||sv
+자유롭다|essere libero||de
+메모리|memoria (informatica)||tc
+부상|ferita / ascesa|*|co
+거대하다|essere enorme||de
+어딨다|dov'è? (colloquiale)||lu
+중앙|centro||lu
+박물관|museo||sv
+블랙|nero||de
+기도하다|pregare||se
+부탁드리다|chiedere (onorifico)||cm
+뿌리다|spargere||az
+지점|filiale / punto|*|lu
+도입하다|introdurre||ba
+빌리다|prendere in prestito||so
+어떠하다|essere come||ba
+정리|ordine (sistemazione)||ba
+셈|calcolo / come se|*|nu
+수단|mezzo (strumento)||ba
+멀쩡하다|essere intatto (sano)||de
+똑같이|allo stesso modo||ba
+소년|ragazzo||pe
+재료|ingrediente (materiale)||ci
+정식|ufficiale / menù completo|*|ba
+의지|volontà||em
+정상적|normale||de
+규정하다|definire (stabilire)||ba
+지나치다|esagerare / passare oltre|*|ba
+그만큼|tanto quanto||nu
+차라리|piuttosto||ba
+종|campana / specie / servo|*|ba
+이웃|vicino (di casa)||pe
+흔히|spesso (comunemente)||ba
+유지|mantenimento||ba
+살짝|leggermente||ba
+놀리다|prendere in giro||cm
+대기업|grande azienda||st
+영업|attività commerciale (vendite)||so
+소스|salsa / fonte (codice)|*|ci
+요청|richiesta||cm
+충격|shock||em
+맞이하다|accogliere||ba
+동생|fratello/sorella minore||pe
+음|suono / ehm|*|cm
+해석|interpretazione (traduzione)||st
+문장|frase||st
+태도|atteggiamento||em
+이사장|presidente (del consiglio)||st
+독특하다|essere particolare (unico)||de
+계속되다|continuare||ba
+장난하다|scherzare||sv
+패션|moda||sv
+아저씨|signore (di mezza età)||pe
+윈도우|Windows (finestra)||tc
+그만두다|lasciare (smettere)||az
+유사하다|essere simile||de
+상당하다|essere considerevole||nu
+범죄자|criminale||se
+역대|di tutti i tempi||te
+순서|ordine (sequenza)||ba
+참조|riferimento||ba
+춥다|fare freddo||na
+부끄럽다|vergognarsi (essere timido)||em
+확인되다|essere confermato||ba
+이벤트|evento (promozione)||sv
+듯하다|sembrare||ba
+호주|Australia||lu
+들어서다|entrare (insediarsi)||ba
+세력|forza (potere)||se
+고기|carne||ci
+실패|fallimento||ba
+분노|rabbia||em
+인식|consapevolezza (riconoscimento)||ba
+움직임|movimento||ba
+보수|conservatore / compenso / riparazione|*|se
+대규모|su larga scala||nu
+조정|aggiustamento / mediazione|*|ba
+드러내다|rivelare (mostrare)||ba
+단순하다|essere semplice||de
+공동체|comunità||se
+시각|prospettiva / ora (momento)|*|ba
+기대|attesa (aspettativa)||em
+찾아가다|andare a trovare||vi
+돼지|maiale||na
+찾아보다|cercare (informarsi)||az
+도서관|biblioteca||st
+미세먼지|polveri sottili||na
+지정|designazione||ba
+만화|fumetto (cartone)||sv
+작성하다|redigere (compilare)||st
+표정|espressione (del viso)||em
+끼치다|causare (arrecare)||ba
+퍼지다|diffondersi||ba
+물러나다|ritirarsi||ba
+요인|fattore||ba
+더불어민주당|Partito Democratico di Corea||se
+풍부하다|essere abbondante||nu
+전달하다|trasmettere (consegnare)||cm
+대안|alternativa||ba
+모임|incontro (raduno)||pe
+구글|Google||tc
+따위|e simili (roba del genere)||ba
+상대적|relativo||ba
+지급하다|pagare (erogare)||so
+친절하다|essere gentile||em
+협상|trattativa||so
+가득하다|essere pieno||nu
+용기|coraggio / contenitore|*|em
+힘내다|farsi forza (forza!)||em
+정원|giardino / capienza|*|ca
+추가되다|essere aggiunto||ba
+끔찍하다|essere orribile||de
+공기|aria||na
+거짓말하다|mentire||cm
+수치|valore numerico / vergogna|*|nu
+강화|rafforzamento||ba
+안드로이드|Android||tc
+신고|denuncia (segnalazione)||se
+보상|ricompensa (risarcimento)||so
+옛|antico (di una volta)||te
+즉시|immediatamente||te
+합의|accordo||cm
+증가|aumento||nu
+가볍다|essere leggero||de
+그렇게|così||ba
+현금|contanti||so
+장르|genere||sv
+각자|ciascuno||pe
+제출하다|consegnare (presentare)||st
+출발하다|partire||vi
+블로그|blog||tc
+지치다|stancarsi||co
+식물|pianta||na
+설립|fondazione||st
+처하다|trovarsi (in una situazione)||ba
+상상|immaginazione||em
+건축|architettura||st
+명단|lista (di nomi)||ba
+치료하다|curare||co
+태양|sole||na
+스페인|Spagna||lu
+검다|essere nero||de
+자살|suicidio||se
+그치다|smettere (cessare)||ba
+원리|principio||st
+어찌|come (in che modo)||ba
+새벽|alba (prima mattina)||te
+복지|welfare (benessere)||se
+인류|umanità||pe
+빨갛다|essere rosso||de
+불과하다|non essere che||ba
+번역|traduzione||st
+선정하다|selezionare||ba
+덕|virtù / merito|*|ba
+연구하다|fare ricerca||st
+흥미롭다|essere interessante||em
+통과하다|passare (superare)||ba
+테마|tema||ba
+고향|paese natale||lu
+닦다|pulire (strofinare)||ca
+지지|sostegno||se
+음성|voce (audio)||tc
+주문하다|ordinare (al ristorante/online)||so
+환영하다|dare il benvenuto||cm
+편지|lettera||cm
+교도소|carcere||se
+부인|moglie (di altri) / negazione|*|pe
+후회하다|pentirsi||em
+그리스도|Cristo||se
+리더|leader||pe
+종료|fine (termine)||te
+표시하다|segnare (indicare)||ba
+바래다|sbiadire / accompagnare|*|ba
+엉망|disastro (caos)||ba

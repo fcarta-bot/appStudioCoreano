@@ -35,6 +35,7 @@ function leggiFiltro(testo) {
 }
 
 function ammessa(p, filtro) {
+  if (p.salta) return false;
   if (p.adulti && !filtro.adulti) return false;
   return filtro.cat.length === 0 || filtro.cat.includes(p.cat);
 }
@@ -308,10 +309,8 @@ function preparaPannello() {
 async function avvia() {
   const indice = await fetch("parole/indice.json").then(r => r.json());
   const etichette = await fetch("parole/categorie.json").then(r => r.json());
-  const blocchi = [];
-  for (let n = 1; n <= indice.blocchi; n++) {
-    blocchi.push(await fetch("parole/blocco-" + String(n).padStart(2, "0") + ".json").then(r => r.json()));
-  }
+  const nomi = Array.from({ length: indice.blocchi }, (_, i) => "parole/blocco-" + String(i + 1).padStart(2, "0") + ".json?v=" + (indice.versione || 1));
+  const blocchi = await Promise.all(nomi.map(n => fetch(n).then(r => r.json())));
   stato = { indice, etichette, blocchi, oggi: new Date() };
   preparaPannello();
   applicaFiltro(leggiSalvato());
