@@ -420,7 +420,7 @@ e스포츠|e-sport||sv
 소유권|diritto di proprietà||so
 부총리|vice primo ministro||se
 공략하다|attaccare (conquistare)||ba
-감독님|allenatore / regista (onorifico)||sv
+감독님|allenatore / regista (onorifico)|*|sv
 떠다|(prendere: acqua)||ba
 깃발|bandiera||se
 승자|vincitore||sv

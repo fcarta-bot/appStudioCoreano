@@ -100,7 +100,7 @@
 여자아이|bambina||pe
 경의|rispetto (omaggio)||em
 트래픽|traffico (web)||tc
-슬다|(arrugginire / deporre uova)||ba
+슬다|arrugginire / deporre uova|*|ba
 할로윈|Halloween||te
 불확실하다|essere incerto||de
 신학적|teologico||se

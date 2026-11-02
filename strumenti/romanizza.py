@@ -46,6 +46,13 @@ def pronuncia(parola):
         if not isinstance(a, list) or not isinstance(b, list):
             continue
         fin, ini = a[2], b[0]
+        # eccezioni: 밟 si legge "bap" davanti a consonante; ㄺ davanti a ㄱ si legge ㄹ (밝기 = balgi)
+        if fin == "ㄼ" and a[0] == "ㅂ" and a[1] == 0 and ini != "ㅇ":
+            a[2] = "ㅂ"
+            fin = "ㅂ"
+        if fin == "ㄺ" and ini == "ㄱ":
+            a[2] = "ㄹ"
+            continue
         if ini == "ㅎ" and fin in DOPPIA_H:
             a[2], b[0] = DOPPIA_H[fin]
             continue

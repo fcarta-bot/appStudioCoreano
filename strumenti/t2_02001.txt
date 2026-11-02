@@ -205,7 +205,7 @@
 지정되다|essere designato||ba
 개선|miglioramento||ba
 라디오|radio||sv
-깊이|profondità / profondamente||nu
+깊이|profondità (profondamente)||nu
 교통|traffico (trasporti)||vi
 꿈꾸다|sognare||em
 이때|a questo punto (in questo momento)||te

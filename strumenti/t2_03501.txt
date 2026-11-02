@@ -93,7 +93,7 @@
 비행|volo / delinquenza|*|vi
 뺏기다|farsi portare via||ba
 섞이다|mescolarsi||ba
-꼽다|contare (sulle dita) / annoverare||nu
+꼽다|contare (sulle dita) / annoverare|*|nu
 번역하다|tradurre||st
 향후|in futuro||te
 기술력|capacità tecnologica||tc
@@ -187,7 +187,7 @@
 다운로드|download||tc
 청구하다|chiedere il pagamento (reclamare)||so
 개성|personalità (individualità)||em
-치|(contatore di quantità) / zio|*|ba
+치|quantità (per n giorni: 3일치)||ba
 농도|concentrazione||nu
 수영|nuoto||sv
 전개|sviluppo (svolgimento)||ba

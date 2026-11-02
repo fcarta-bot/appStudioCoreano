@@ -141,7 +141,7 @@
 담임|insegnante di classe||st
 기질|temperamento||em
 투기|speculazione||so
-조합원|membro (della cooperativa / sindacato)||pe
+조합원|membro (di cooperativa o sindacato)||pe
 막강하다|essere potentissimo||de
 주도적|di guida (principale)||ba
 연어|salmone||ci

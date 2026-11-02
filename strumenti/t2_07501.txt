@@ -171,7 +171,7 @@
 광기|follia||em
 단행하다|attuare (con decisione)||ba
 진도|progresso (avanzamento) / Jindo|*|ba
-조지다|picchiare / mandare a monte (volgare)|!|az
+조지다|picchiare / mandare a monte (volgare)|*!|az
 우두머리|capo||pe
 걸어오다|venire a piedi / avviare (conversazione)|*|vi
 올리브|oliva||ci
@@ -389,7 +389,7 @@
 해발|sul livello del mare||na
 전념하다|dedicarsi||ba
 터트리다|far scoppiare||az
-페이|paga / pagamento (pay)||so
+페이|paga (pay)||so
 엔딩|finale (ending)||sv
 열악하다|essere scadente||de
 투여하다|somministrare||co

@@ -96,7 +96,7 @@
 인도|India / marciapiede|*|lu
 온라인|online||tc
 공개되다|essere reso pubblico||se
-뛰다|correre / saltare||az
+뛰다|correre / saltare|*|az
 방문하다|visitare||vi
 채우다|riempire||az
 광고|pubblicità||so
@@ -237,7 +237,7 @@
 노동자|lavoratore||st
 고객|cliente||so
 참가하다|partecipare||ba
-모시다|accompagnare / servire (onorifico)||pe
+모시다|accompagnare / servire (onorifico)|*|pe
 과학|scienza||st
 전기|elettricità / biografia|*|ca
 공|palla / zero|*|sv

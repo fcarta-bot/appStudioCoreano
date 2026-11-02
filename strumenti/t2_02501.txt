@@ -127,7 +127,7 @@
 터|terreno / sito|*|lu
 취소하다|annullare||ba
 식품|alimenti||ci
-오빠|fratello maggiore (di una ragazza) / fidanzato||pe
+오빠|fratello maggiore (detto da una ragazza; anche: fidanzato)||pe
 클래식|musica classica||sv
 설립되다|essere fondato||st
 매출|vendite (fatturato)||so

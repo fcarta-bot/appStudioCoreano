@@ -378,7 +378,7 @@ K리그|K League||sv
 합당하다|essere appropriato||de
 천안함|Cheonan (corvetta)||se
 경제성장|crescita economica||so
-정신병자|malato di mente (spregiativo)||pe
+정신병자|malato di mente (spregiativo)|!|pe
 레전드|leggenda||sv
 수백만|milioni||nu
 질투|gelosia||em
