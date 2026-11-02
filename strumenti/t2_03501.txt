@@ -457,7 +457,7 @@
 라이프|vita (life)||pe
 고백하다|confessare (dichiararsi)||em
 철|ferro / stagione / giudizio|*|ba
-무고하다|essere innocente||se
+무고하다|essere innocente / accusare falsamente|*|se
 남부|regione meridionale||lu
 서양|Occidente||lu
 초래하다|causare||ba

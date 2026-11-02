@@ -219,7 +219,7 @@
 장교|ufficiale (militare)||se
 면역|immunità||co
 고전적|classico||ba
-소지|possesso (portare con sé)||ba
+소지|possesso / possibilità (margine, es. 오해의 소지)|*|ba
 출퇴근|pendolarismo (andata e ritorno dal lavoro)||st
 알파|alfa||ba
 귀중하다|essere prezioso||de
@@ -242,7 +242,7 @@
 강력|forte (potente)||de
 아군|truppe amiche||se
 한꺼번에|tutto in una volta||ba
-진작에|già da tempo||te
+진작에|prima (per tempo, avrei dovuto)||te
 정반대|esatto contrario||ba
 대원|membro (della squadra)||pe
 구매자|acquirente||so
@@ -382,7 +382,7 @@ K리그|K League||sv
 레전드|leggenda||sv
 수백만|milioni||nu
 질투|gelosia||em
-구형|vecchio modello / sferico|*|ba
+구형|vecchio modello / richiesta di pena / sferico|*|ba
 판문점|Panmunjom||lu
 모세|Mosè||se
 회의실|sala riunioni||st
@@ -456,7 +456,7 @@ K리그|K League||sv
 미녀|bella ragazza||pe
 앞쪽|parte anteriore||lu
 치유하다|guarire||co
-정국|situazione politica||se
+정국|situazione politica / Jungkook (BTS)|*|se
 입양|adozione||pe
 연휴|ponte (giorni festivi consecutivi)||te
 겨냥하다|mirare||ba
@@ -497,4 +497,4 @@ K리그|K League||sv
 억제|contenimento||ba
 아프가니스탄|Afghanistan||lu
 놔주다|lasciar andare||az
-폴리|poli- / polizia (gergo)|*|ba
+폴리|poli- (poliestere, polimero)||ba

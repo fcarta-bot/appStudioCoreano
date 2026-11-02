@@ -31,7 +31,7 @@
 아비|padre (volgare)|!|pe
 배출|emissione (scarico)||ba
 백제|Baekje (antico regno)||se
-린|Lin / lean|*|ba
+린|Lin (nome)||ba
 화해|riconciliazione||em
 칭하다|chiamare (denominare)||cm
 파헤치다|scavare (indagare a fondo)||az
@@ -86,7 +86,7 @@ LG전자|LG Electronics||tc
 물러서다|indietreggiare||az
 핥다|leccare||az
 양측|entrambe le parti||ba
-마냥|semplicemente (all'infinito)||ba
+마냥|senza fine (a volontà) / come (simile a)|*|ba
 해답|soluzione (risposta)||st
 소설가|romanziere||sv
 전류|corrente elettrica||tc
@@ -158,7 +158,7 @@ LG전자|LG Electronics||tc
 e스포츠|e-sport||sv
 국립공원|parco nazionale||na
 선수단|squadra (delegazione)||sv
-스프링|molla / primavera|*|ba
+스프링|molla||ba
 레이더|radar||tc
 애인|amante (fidanzato)||pe
 성장률|tasso di crescita||so
@@ -171,7 +171,7 @@ e스포츠|e-sport||sv
 순환|circolazione (ciclo)||ba
 광주시|città di Gwangju||lu
 식별하다|identificare||ba
-등지|e altri luoghi / voltare le spalle|*|lu
+등지|e altri luoghi (ecc.)||lu
 무장하다|armarsi||se
 여학생|studentessa||st
 생산성|produttività||st
@@ -244,7 +244,7 @@ e스포츠|e-sport||sv
 호스트|ospite (host)||tc
 민주|democrazia||se
 여배우|attrice||sv
-셀|cella / selfie|*|ba
+셀|cella / cellula|*|ba
 착수하다|avviare (iniziare)||ba
 진료|visita medica||co
 가톨릭|cattolico||se
@@ -412,7 +412,7 @@ e스포츠|e-sport||sv
 멀티|multi||ba
 패|carta (mano) / sconfitta / banda|*|ba
 임명|nomina||se
-젓다|mescolare / remare|*|ci
+젓다|mescolare / remare / scuotere (la testa)|*|ci
 권고|raccomandazione||cm
 소요|tempo richiesto / tumulto|*|ba
 고소|denuncia||se

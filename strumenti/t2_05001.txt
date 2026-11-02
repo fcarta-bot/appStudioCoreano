@@ -12,7 +12,7 @@
 민감하다|essere sensibile||de
 구상|progetto (idea)||ba
 영화제|festival del cinema||sv
-비치다|riflettersi (trasparire)||ba
+비치다|splendere (luce) / riflettersi / trasparire|*|ba
 메이저|maggiore (major)||de
 장기간|lungo periodo||te
 우측|lato destro||lu
@@ -495,6 +495,6 @@ SK텔레콤|SK Telecom||tc
 씩|ciascuno (a testa)||nu
 양성하다|formare (addestrare)||st
 와이프|moglie||pe
-준수하다|rispettare (osservare)||ba
+준수하다|rispettare (osservare) / essere di bell'aspetto|*|ba
 저하|calo (diminuzione)||nu
 촉진하다|promuovere (accelerare)||ba

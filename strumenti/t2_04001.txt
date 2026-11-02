@@ -2,7 +2,7 @@
 객체|oggetto||tc
 임마|ehi tu (volgare)|!|cm
 신학|teologia||se
-충남|Chungnam||lu
+충남|Chungcheong del Sud (provincia)||lu
 긴급|emergenza||ba
 끌어들이다|coinvolgere (attirare)||ba
 셔츠|camicia||ca
@@ -10,7 +10,7 @@
 기호|simbolo / gusto|*|ba
 곧바로|subito||te
 촉구하다|sollecitare||cm
-카카오|Kakao (app)||tc
+카카오|cacao / Kakao (azienda, app)|*|tc
 걸어가다|andare a piedi||vi
 구분되다|essere distinto||ba
 해안|costa||na
@@ -259,7 +259,7 @@
 공화국|repubblica||se
 설탕|zucchero||ci
 사드|THAAD (sistema missilistico)||se
-음모|complotto||se
+음모|complotto / peli pubici|*|se
 정치권|mondo politico||se
 행성|pianeta||na
 거품|schiuma (bolla)||ba
@@ -349,7 +349,7 @@
 잔뜩|in abbondanza||nu
 장담하다|garantire||cm
 제시|presentazione (proposta)||ba
-손자|nipote (figlio del figlio)||pe
+손자|nipote (maschio, dei nonni)||pe
 왜냐면|perché||ba
 당황하다|essere confuso (in imbarazzo)||em
 테이프|nastro||ca

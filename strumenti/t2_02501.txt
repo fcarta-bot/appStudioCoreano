@@ -391,7 +391,7 @@
 민간|civile (privato)||se
 과학자|scienziato||st
 토|sabato / terra|*|te
-거칠다|essere ruvido||de
+거칠다|essere ruvido / essere rude (violento)|*|de
 효율적|efficiente||de
 완성하다|completare||ba
 찢다|strappare||az
@@ -402,7 +402,7 @@
 신부|sposa / prete (cattolico)|*|pe
 전환하다|convertire (cambiare)||ba
 진술|dichiarazione (deposizione)||se
-서|ovest / (scrivere)|*|lu
+서|ovest / Seo (cognome)|*|lu
 날짜|data||te
 진단|diagnosi||co
 공감하다|essere d'accordo (empatizzare)||em

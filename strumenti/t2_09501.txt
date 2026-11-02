@@ -45,7 +45,7 @@
 두어|un paio||nu
 일제히|tutti insieme||ba
 수습|tirocinio / gestione della crisi|*|ba
-막론하다|a prescindere da||ba
+막론하다|non fare distinzioni (a prescindere da)||ba
 포터|facchino / Potter|*|pe
 제기|sollevamento (di questione) / jegi (gioco)|*|ba
 초록|verde / riassunto|*|de
@@ -126,9 +126,9 @@
 용사|guerriero (eroe)||pe
 분홍색|rosa||de
 시스코|Cisco||tc
-정직|onestà||em
+정직|onestà / sospensione dal servizio|*|em
 절다|zoppicare / essere marinato|*|co
-불의|ingiustizia||se
+불의|ingiustizia / imprevisto (improvviso)|*|se
 권유하다|consigliare (invitare)||cm
 포커스|messa a fuoco||ba
 구강|cavità orale||co
@@ -258,7 +258,7 @@
 차단되다|essere bloccato||ba
 침입하다|irrompere||se
 생산적|produttivo||de
-무방하다|non fare niente (andare bene)||ba
+무방하다|andare bene (non esserci problema)||ba
 발하다|emettere||ba
 크리에이터|creator||tc
 길드|gilda||sv
@@ -419,7 +419,7 @@
 수십억|miliardi||nu
 맞붙다|affrontarsi||sv
 오만|arroganza / cinquantamila|*|em
-간장|salsa di soia||ci
+간장|salsa di soia / fegato|*|ci
 만연하다|essere diffuso||de
 예고편|trailer (anteprima)||sv
 전기요금|bolletta della luce||so

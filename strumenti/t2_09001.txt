@@ -122,7 +122,7 @@
 마음먹다|decidere (proporsi)||em
 소유주|proprietario||pe
 초상화|ritratto||sv
-작|opera / piccolo|*|ba
+작|opera (di un autore)||ba
 카페인|caffeina||ci
 뛰어다니다|correre in giro||az
 철강|acciaio||st
@@ -130,7 +130,7 @@
 현관|ingresso (porta di casa)||ca
 기간동안|durante il periodo||te
 작사|testo (di canzone)||sv
-새로이|di nuovo||ba
+새로이|ex novo (in modo nuovo)||ba
 빚지다|indebitarsi||so
 길들이다|addomesticare||az
 호응|risposta (consenso)||ba
@@ -286,7 +286,7 @@
 합격자|promosso (candidato ammesso)||st
 강인하다|essere tenace||de
 접종|vaccinazione||co
-여성가족부|Ministero per l'uguaglianza di genere||se
+여성가족부|Ministero per l'uguaglianza di genere e la famiglia||se
 과천|Gwacheon||lu
 격리|isolamento (quarantena)||co
 졸라|tantissimo (volgare)|!|ba
@@ -368,7 +368,7 @@
 요셉|Giuseppe (biblico)||se
 성사되다|concretizzarsi||ba
 문화재청|Agenzia per il patrimonio culturale||se
-가엽다|essere pietoso||em
+가엽다|fare pena (essere poveretto)||em
 족|tribù / zampa (piedini)|*|ba
 이를테면|per esempio||ba
 상관관계|correlazione||ba

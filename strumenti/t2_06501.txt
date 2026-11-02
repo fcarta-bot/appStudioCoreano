@@ -34,7 +34,7 @@
 코디|abbinamento (outfit)||ca
 적응|adattamento||ba
 비트코인|Bitcoin||so
-나이트|notte / cavaliere|*|te
+나이트|discoteca (night club) / cavaliere|*|te
 극히|estremamente||ba
 음악적|musicale||sv
 마구|a casaccio (sconsideratamente)||ba
@@ -234,7 +234,7 @@
 추출하다|estrarre||ba
 구미|Gumi / gusto (appetito)|*|lu
 공산주의|comunismo||se
-포장하다|impacchettare||ca
+포장하다|impacchettare / asfaltare|*|ca
 동무|compagno||pe
 유출되다|trapelare||ba
 비비다|strofinare / mescolare (bibimbap)|*|az

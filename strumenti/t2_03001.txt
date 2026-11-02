@@ -189,7 +189,7 @@
 시청|municipio / visione (TV)|*|lu
 확정되다|essere confermato||ba
 텍스트|testo||tc
-국|zuppa / stato (nazione)|*|ci
+국|zuppa (brodo) / ufficio (dipartimento)|*|ci
 학문|disciplina accademica||st
 차단|blocco (interruzione)||ba
 고속도로|autostrada||vi
@@ -245,7 +245,7 @@
 숙이다|abbassare (chinare)||co
 취급하다|trattare (maneggiare)||ba
 대략|circa||nu
-축|asse / squadra di calcio|*|ba
+축|asse / gruppo (categoria)|*|ba
 무덤|tomba||se
 어딜|dove (oggetto) [어디를]||lu
 예약하다|prenotare||vi
@@ -409,7 +409,7 @@
 동원하다|mobilitare||ba
 감|cachi / sensazione|*|ci
 농장|fattoria||na
-이야|wow! / storia|*|cm
+이야|wow! / è (copula informale)|*|cm
 경기장|stadio||sv
 낭비하다|sprecare||so
 군사|militare||se
@@ -421,11 +421,11 @@
 빌딩|edificio (palazzo)||lu
 골프|golf||sv
 마스터|maestro (master)||ba
-계|conto / mondo (ambito)|*|ba
+계|mondo (ambito) / totale / associazione di risparmio|*|ba
 챔피언|campione||sv
 컬러|colore||de
 황제|imperatore||se
-짝|compagno (paio) / clap|*|pe
+짝|compagno (paio) / schiocco (rumore)|*|pe
 여기저기|qua e là||lu
 투명하다|essere trasparente||de
 짜증|irritazione||em

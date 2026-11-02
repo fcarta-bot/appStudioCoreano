@@ -17,7 +17,7 @@
 표현하다|esprimere||cm
 저녁|sera / cena|*|te
 수많다|essere numerosissimi||nu
-트럼프|Trump||se
+트럼프|Trump / carte da gioco|*|se
 장치|dispositivo||tc
 아시아|Asia||lu
 방|stanza||ca
@@ -205,7 +205,7 @@
 역|stazione / ruolo|*|vi
 세다|essere forte / contare|*|de
 물건|oggetto||ca
-지구|Terra (pianeta)||na
+지구|Terra (pianeta) / zona (distretto)|*|na
 펼치다|spiegare (aprire) / svolgere|*|az
 최종|finale||ba
 적용되다|essere applicato||ba
@@ -232,7 +232,7 @@
 플랫폼|piattaforma||tc
 흐르다|scorrere||na
 선정되다|essere selezionato||ba
-새로|di nuovo (da capo)||ba
+새로|ex novo (di recente, appena)||ba
 왕|re||se
 노동자|lavoratore||st
 고객|cliente||so
@@ -243,7 +243,7 @@
 공|palla / zero|*|sv
 조선|Joseon (antica Corea) / costruzione navale|*|se
 연기|recitazione / fumo / rinvio|*|sv
-차례|turno||ba
+차례|turno (ordine) / volta (n. volte)|*|ba
 밀다|spingere||az
 기억하다|ricordare||em
 은행|banca / ginkgo|*|so

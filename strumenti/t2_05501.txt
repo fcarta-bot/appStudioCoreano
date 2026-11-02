@@ -68,7 +68,7 @@
 배포하다|distribuire||ba
 살인범|assassino||se
 패밀리|famiglia||pe
-기하다|prendere cura (assicurare)||ba
+기하다|mirare a (garantire)||ba
 변환하다|convertire||tc
 얘긴|storia (tema) [얘기는]||cm
 덜다|togliere (ridurre)||az
@@ -290,7 +290,7 @@
 훼손하다|danneggiare||az
 엘리트|élite||pe
 부친|padre (formale)||pe
-어지럽다|avere le vertigini||co
+어지럽다|avere le vertigini / essere in disordine|*|co
 이씨|signor Lee||pe
 계급|classe (rango)||se
 학대|maltrattamento||se

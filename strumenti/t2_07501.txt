@@ -445,8 +445,8 @@
 시합|partita (gara)||sv
 한데|insieme (in un posto) / ma|*|ba
 얘네|questi ragazzi||pe
-성립하다|costituirsi||ba
-리프트|ascensore (seggiovia)||vi
+성립하다|realizzarsi (essere stabilito)||ba
+리프트|seggiovia (skilift)||vi
 버디|amico (buddy) / birdie|*|pe
 순차적|sequenziale||ba
 대머리|calvo||co
@@ -477,7 +477,7 @@
 하여간|in ogni caso||ba
 점검|controllo (ispezione)||ba
 선반|scaffale / tornio|*|ca
-자수하다|costituirsi||se
+자수하다|costituirsi / ricamare|*|se
 상기|sopraccitato / ricordare|*|ba
 보답하다|ricambiare||em
 일삼다|avere l'abitudine di||ba

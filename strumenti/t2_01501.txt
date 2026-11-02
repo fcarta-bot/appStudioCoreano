@@ -119,7 +119,7 @@
 현황|situazione attuale||ba
 라인|linea||ba
 조용하다|essere silenzioso||de
-꾸다|sognare (fare un sogno)||em
+꾸다|sognare / prendere in prestito|*|em
 내일|domani||te
 휴대폰|cellulare||tc
 스트레스|stress||em
@@ -339,7 +339,7 @@
 지점|filiale / punto|*|lu
 도입하다|introdurre||ba
 빌리다|prendere in prestito||so
-어떠하다|essere come||ba
+어떠하다|essere in che modo (com'è)||ba
 정리|ordine (sistemazione)||ba
 셈|calcolo / come se|*|nu
 수단|mezzo (strumento)||ba

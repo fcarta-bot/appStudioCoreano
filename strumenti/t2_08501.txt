@@ -230,7 +230,7 @@ TV조선|TV Chosun||sv
 내부적|interno||ba
 아브라함|Abramo||se
 친절|gentilezza||em
-납시다|(degnarsi di venire)||ba
+납시다|uscire / venire (onorifico, di un re)||ba
 따름|soltanto (non resta che)||ba
 관습|usanza||se
 용지|carta (modulo) / terreno|*|st

@@ -33,7 +33,7 @@
 조금|un po'|
 사건|caso / incidente|
 쉽다|essere facile|
-세|tre / affitto|*
+세|tre / anni (d'età) / affitto|*
 아프다|fare male / essere malato|
 자료|materiale (dati)|
 당시|allora (a quel tempo)|
@@ -200,7 +200,7 @@
 기존|esistente|
 개인|individuo|
 과거|passato|
-지|da quando (tempo) / desinenza|*
+지|da quando (tempo) / vero? (desinenza)|*
 하루|un giorno|
 살리다|salvare (la vita)|
 궁금하다|essere curioso|
@@ -221,7 +221,7 @@
 모으다|raccogliere|
 나서다|farsi avanti|
 감독|regista / allenatore|*
-쉬다|riposare|
+쉬다|riposare / respirare|*
 일단|per prima cosa|
 평가|valutazione|
 지원|sostegno / candidatura|*
@@ -352,7 +352,7 @@
 방향|direzione|
 음식|cibo|
 장|capitolo / mercato / foglio|*
-되|(forma di 되다) / staio|*
+되|diventare (da 되다) / staio (misura)|*
 뜨다|sorgere / galleggiare / aprire (gli occhi)|*
 개념|concetto|
 계시다|esserci (onorifico)|
@@ -410,7 +410,7 @@
 예정|programma (previsto)|
 노래|canzone|
 거치다|passare per|
-본|(questo) / esemplare|*
+본|il presente (questo) / modello (esempio)|*
 소식|notizia|
 벌다|guadagnare|
 차이|differenza|

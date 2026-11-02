@@ -23,7 +23,7 @@
 민주주의|democrazia||se
 까다|sbucciare / criticare|*|az
 검색하다|cercare (online)||tc
-영|zero / film (abbr.) / spirito|*|nu
+영|zero / per niente (affatto) / spirito|*|nu
 촬영하다|filmare (fotografare)||sv
 지속되다|durare (continuare)||te
 싣다|caricare (pubblicare)||az
@@ -343,7 +343,7 @@
 이메일|email||tc
 수행|svolgimento||ba
 혁명|rivoluzione||se
-우|destra / pioggia|*|ba
+우|destra / buono (voto scolastico)|*|ba
 백|cento / borsa / bianco|*|nu
 제작되다|essere prodotto||st
 사운드|suono||sv
@@ -352,7 +352,7 @@
 발표되다|essere annunciato||cm
 행정|amministrazione||se
 졸업하다|diplomarsi (laurearsi)||st
-설|Capodanno coreano||te
+설|Capodanno coreano / teoria (voce, diceria)|*|te
 적합하다|essere adatto||de
 담당|responsabile (incaricato)||st
 구성원|membro||pe
@@ -441,7 +441,7 @@
 베스트|il migliore||de
 원장|direttore||st
 형성하다|formare||ba
-인정|riconoscimento||ba
+인정|riconoscimento / umanità (calore umano)|*|ba
 근로자|lavoratore||st
 돌보다|prendersi cura di||pe
 제한되다|essere limitato||ba
